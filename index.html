@@ -3,47 +3,116 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, inicial-scale=1">
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name="description" content="">
         <meta name="author" content="Felipe Dantas">
         <title>Felipe Dantas - WebDev</title>
         <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<script src='assets/js/bootstrap.js'></script>
+		<script src="assets/js/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/06d46b2455.js" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <section id="sites">
-            <div class="px-4 pt-5 my-5 text-center border-bottom">
-                <h1 class="display-4 fw-bold">Carcara.me</h1>
-                <div class="col-lg-6 mx-auto">
-                  <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-                  </div>
-                </div>
-                <div class="overflow-hidden" style="max-height: 30vh;">
-                  <div class="container px-5">
-                    <img src="/assets/images/screenshot1.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-                  </div>
-                </div>
-              </div>
 
-              <div class="b-example-divider"></div>
+    <body id="page-top">
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand js-scroll-trigger" href="#page-top">Felipe Dantas</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-sort-down"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#about">About me</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-              <div class="px-4 pt-5 my-5 text-center border-bottom">
-                <h1 class="display-4 fw-bold">ArthurCavalcanti.com</h1>
-                <div class="col-lg-6 mx-auto">
-                  <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-                  </div>
-                </div>
-                <div class="overflow-hidden" style="max-height: 30vh;">
-                  <div class="container px-5">
-                    <img src="/assets/images/screenshot2.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-                  </div>
-                </div>
-              </div>
+		<header class="bg-dark pt-5">
+			<div class="container">
+				<img class="img-fluid rounded-circle mx-auto d-block" src="assets/images/profile.jpg" style="height: 150px; width: 150px;">
+				<p class="text-center text-white display-1">Hi, I'm Felipe</p>
+				<p class="text-center text-white display-6">A Junior Web Developer, always trying to learn more</p>			
+			</div>
+		</header>
+
+        <section id="skills">
+			<div class="container">
+				<h1 class="text-start display-6">Skills</h1>	
+
+				<div class="container px-4 py-5" id="icon-grid">
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+					  	<div class="col d-flex align-items-start">
+							<div>
+								<h4 class="fw-bold mb-0"><i class="fab fa-bootstrap"></i> Bootstrap 5.0</h4>
+								<p>Paragraph of text beneath the heading to explain the heading.</p>
+							</div>
+						</div>
+						
+						<div class="col d-flex align-items-start">
+							<div>
+								<h4 class="fw-bold mb-0"> <i class="fab fa-css3-alt"></i> CSS 3</h4>
+								<p>Paragraph of text beneath the heading to explain the heading.</p>
+							</div>
+						</div>
+
+						<div class="col d-flex align-items-start">
+							<div>
+							<h4 class="fw-bold mb-0"><i class="fab fa-html5"></i> HTML 5</h4>
+							<p>Paragraph of text beneath the heading to explain the heading.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
         </section>
-        
+		
+        <section id="portfolio">
+			<div class="container">
+				<h1 class="text-start display-6">Portfolio</h1>	
+				<div class="px-4 pt-5 my-5 text-center border-bottom">
+					<h1 class="display-4 fw-bold">Carcara.me</h1>
+					<div class="col-lg-6 mx-auto">
+					  <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+					  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+						<button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+						<button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+					  </div>
+					</div>
+					<div class="overflow-hidden" style="max-height: 30vh;">
+					  <div class="container px-5">
+						<img src="/assets/images/screenshot1.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+					  </div>
+					</div>
+				  </div>
+	
+				  <div class="b-example-divider"></div>
+	
+				  <div class="px-4 pt-5 my-5 text-center border-bottom">
+					<h1 class="display-4 fw-bold">ArthurCavalcanti.com</h1>
+					<div class="col-lg-6 mx-auto">
+					  <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+					  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+						<button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+						<button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+					  </div>
+					</div>
+					<div class="overflow-hidden" style="max-height: 30vh;">
+					  <div class="container px-5">
+						<img src="/assets/images/screenshot2.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+					  </div>
+					</div>
+				  </div>
+			</div>
+        </section>
     </body>
 </html>
