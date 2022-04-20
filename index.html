@@ -32,11 +32,11 @@
 
             <div class="box" @mouseover="handleEvent, enteringCount++" >
                 MouseOver(enter)<br>
-                You've entered this box {{ enteringCount }} times
+                You've entered the mouse on this box {{ enteringCount }} times
             </div>
             <div class="box" @mouseleave="handleEvent, leavingCount++">
                 MouseLeave(exit)<br>
-                You've leaved this box {{ leavingCount }} times
+                You've leaved the mouse on this box {{ leavingCount }} times
             </div>
             <div class="box" @dblclick="handleEvent, doubleClickCount++">
                 Double Click<br>
